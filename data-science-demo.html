@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Demo - Bat Dada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FFY276SNF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5FFY276SNF');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Bat Dada.</div>
+        <nav>
+            <a href="demos.html">Demo Lectures</a>
+            <a href="courses.html">Notes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <a href="courses.html" class="back-btn-glass">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        
+        <section class="demo-page">
+            <h1>Data Science & Machine Learning by Code with Harry - Demo Lectures</h1>
+            <p class="course-description">Comprehensive data science course covering Python, Flask, and essential ML libraries for data analysis and machine learning.</p>
+            
+            <div class="demo-lecture-container">
+                <div class="lecture-sidebar">
+                    <h3>Available Lectures</h3>
+                                         <div class="lecture-category active" onclick="loadLecture('intro-ds', this)">
+                         <i class="fab fa-python"></i>
+                         Why Choose Python
+                     </div>
+                     <div class="lecture-category" onclick="loadLecture('python-basics', this)">
+                         <i class="fas fa-chart-line"></i>
+                         What is Data Science
+                     </div>
+                     <div class="lecture-category" onclick="loadLecture('numpy', this)">
+                         <i class="fas fa-file-alt"></i>
+                         File Handling
+                     </div>
+                     <div class="lecture-category" onclick="loadLecture('pandas', this)">
+                         <i class="fas fa-code"></i>
+                         JSON Module
+                     </div>
+                                           <div class="lecture-category" onclick="loadLecture('matplotlib', this)">
+                          <i class="fas fa-function"></i>
+                          Lambda Functions
+                      </div>
+                     <div class="lecture-category" onclick="loadLecture('flask', this)">
+                         <i class="fas fa-graduation-cap"></i>
+                         Resources and Career Guidance
+                     </div>
+                     <div class="lecture-category" onclick="loadLecture('ml-basics', this)">
+                         <i class="fas fa-flag-checkered"></i>
+                         Course Summary & What's Next
+                     </div>
+                </div>
+                
+                <div class="lecture-content">
+                                         <div class="lecture-header">
+                         <h2 class="lecture-title">Why Choose Python</h2>
+                         <p class="lecture-subtitle">Lecture 1 of 7</p>
+                     </div>
+                    
+                    <div class="video-player">
+                        <video controls>
+                            <source src="python-demo assests/1. Why choose python .mp4 ilaps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    <div class="lecture-description">
+                        <p>Understanding the fundamentals of data science, its applications in various industries, and the data science workflow. Learn about the key concepts and tools used in modern data analysis.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-highlights">
+                <h2>Course Highlights</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i> Complete Python Programming</li>
+                    <li><i class="fas fa-check"></i> Flask Web Framework</li>
+                    <li><i class="fas fa-check"></i> NumPy for Numerical Computing</li>
+                    <li><i class="fas fa-check"></i> Pandas for Data Analysis</li>
+                    <li><i class="fas fa-check"></i> Matplotlib & Seaborn for Visualization</li>
+                    <li><i class="fas fa-check"></i> Machine Learning Algorithms</li>
+                    <li><i class="fas fa-check"></i> Data Preprocessing & Feature Engineering</li>
+                    <li><i class="fas fa-check"></i> Real-world Data Science Projects</li>
+                </ul>
+            </div>
+            
+            <div class="enroll-section">
+                <h2>Ready to Master Data Science?</h2>
+                <p>Get complete access to all lectures, assignments, and projects.</p>
+                <div style="background:#4CAF50;color:#fff;padding:8px 16px;border-radius:8px;margin-bottom:16px;text-align:center;font-weight:bold;font-size:0.95rem;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                    <i class="fas fa-upload" style="margin-right:6px;"></i>Upload Complete in 5 Days
+                </div>
+                <a href="https://rzp.io/rzp/Codeharry" class="enroll-btn" target="_blank">
+                    <i class="fas fa-graduation-cap"></i>
+                    Enroll Now - ₹1299
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+                            <div class="logo">Bat Dada</div>
+                <p>&copy; 2025 Bat Dada. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+                 const lectures = {
+             'intro-ds': {
+                 title: 'Why Choose Python',
+                 subtitle: 'Lecture 1 of 7',
+                 video: 'python-demo assests/1. Why choose python .mp4 ilaps.mp4',
+                 description: 'Understanding the fundamentals of data science, its applications in various industries, and the data science workflow. Learn about the key concepts and tools used in modern data analysis.'
+             },
+             'python-basics': {
+                 title: 'What is Data Science',
+                 subtitle: 'Lecture 2 of 7',
+                 video: 'python-demo assests/2.What is data science .mp4 ilaps.mp4',
+                 description: 'Learn Python programming essentials for data analysis including variables, data types, control structures, and functions specifically designed for data science applications.'
+             },
+             'numpy': {
+                 title: 'File Handling',
+                 subtitle: 'Lecture 3 of 7',
+                 video: 'python-demo assests/3. File handling .mp4 ilaps.mp4',
+                 description: 'Master NumPy for numerical computing and array operations. Learn about array creation, manipulation, mathematical operations, and broadcasting for efficient data processing.'
+             },
+             'pandas': {
+                 title: 'JSON Module',
+                 subtitle: 'Lecture 4 of 7',
+                 video: 'python-demo assests/4. JSON module .mp4 ilaps.mp4',
+                 description: 'Learn Pandas for data manipulation and analysis. Master DataFrame operations, data cleaning, filtering, grouping, and merging datasets for comprehensive data analysis.'
+             },
+             'matplotlib': {
+                 title: 'Lambda Functions',
+                 subtitle: 'Lecture 5 of 7',
+                 video: 'python-demo assests/5. Lambda functions .mp4 ilaps.mp4',
+                 description: 'Create stunning visualizations with Matplotlib and Seaborn. Learn to create various chart types, customize plots, and present data insights effectively.'
+             },
+             'flask': {
+                 title: 'Resources and Career Guidance',
+                 subtitle: 'Lecture 6 of 7',
+                 video: 'python-demo assests/6. Resources and Career Guidancemp4 ilaps.mp4',
+                 description: 'Build web applications with Flask for data science projects. Learn to create APIs, web interfaces for ML models, and deploy data science applications.'
+             },
+             'ml-basics': {
+                 title: 'Course Summary & What\'s Next',
+                 subtitle: 'Lecture 7 of 7',
+                 video: 'python-demo assests/7. Course Summary & What\'s Nextmp4 ilaps.mp4',
+                 description: 'Introduction to machine learning algorithms and concepts. Understand supervised and unsupervised learning, model evaluation, and basic ML workflows.'
+             }
+         };
+
+        function loadLecture(lectureId, element) {
+            // Remove active class from all categories
+            document.querySelectorAll('.lecture-category').forEach(cat => {
+                cat.classList.remove('active');
+            });
+            
+            // Add active class to clicked category
+            element.classList.add('active');
+            
+            // Get lecture data
+            const lecture = lectures[lectureId];
+            if (!lecture) return;
+            
+            // Update lecture content
+            document.querySelector('.lecture-title').textContent = lecture.title;
+            document.querySelector('.lecture-subtitle').textContent = lecture.subtitle;
+            document.querySelector('.video-player video source').src = lecture.video;
+            document.querySelector('.video-player video').load();
+            document.querySelector('.lecture-description p').textContent = lecture.description;
+        }
+    </script>
+</body>
+</html> 

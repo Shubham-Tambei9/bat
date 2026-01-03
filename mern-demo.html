@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MERN Stack Demo Lectures | Bat Dada</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FFY276SNF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5FFY276SNF');
+  </script>
+</head>
+  <body>
+  <header>
+    <div class="logo">Bat Dada.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <a href="courses.html" class="back-btn-glass">
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <section class="demo-page">
+      <h1>MERN Stack Demo Lectures</h1>
+      <p class="course-description">Explore our MERN Stack demo lectures to get a taste of our full stack web development course. Click on any lecture to start learning right away.</p>
+      
+      <div class="demo-lecture-container">
+        <div class="lecture-sidebar">
+          <h3>Available Lectures</h3>
+          <div class="lecture-category active" onclick="loadLecture('html-css', this)">
+            <i class="fab fa-html5"></i>
+            HTML & CSS Basics
+          </div>
+          <div class="lecture-category" onclick="loadLecture('javascript', this)">
+            <i class="fab fa-js-square"></i>
+            JavaScript Essentials
+          </div>
+          <div class="lecture-category" onclick="loadLecture('react', this)">
+            <i class="fab fa-react"></i>
+            React Introduction
+          </div>
+          <div class="lecture-category" onclick="loadLecture('nodejs', this)">
+            <i class="fab fa-node-js"></i>
+            Node.js & Express Basics
+          </div>
+          <div class="lecture-category" onclick="loadLecture('mongodb', this)">
+            <i class="fas fa-database"></i>
+            MongoDB Overview
+          </div>
+        </div>
+        
+        <div class="lecture-content">
+          <div class="lecture-header">
+            <h2 class="lecture-title">HTML & CSS Basics</h2>
+            <p class="lecture-subtitle">Lecture 1 of 5</p>
+          </div>
+          
+          <div class="video-player">
+            <video controls>
+              <source src="mern-demo assests/05. Forms in HTML.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          
+          <div class="lecture-description">
+            <p>Learn the fundamentals of HTML and CSS for building responsive web pages. This lecture covers semantic HTML structure and modern CSS styling techniques.</p>
+          </div>
+        </div>
+                  </div>
+            
+            <div class="course-highlights">
+                <h2>Course Highlights</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i> HTML5 & CSS3 Fundamentals</li>
+                    <li><i class="fas fa-check"></i> JavaScript ES6+ Features</li>
+                    <li><i class="fas fa-check"></i> React.js Components & Hooks</li>
+                    <li><i class="fas fa-check"></i> Node.js & Express.js Backend</li>
+                    <li><i class="fas fa-check"></i> MongoDB Database Integration</li>
+                    <li><i class="fas fa-check"></i> RESTful API Development</li>
+                    <li><i class="fas fa-check"></i> State Management (Redux/Context)</li>
+                    <li><i class="fas fa-check"></i> Full-Stack Project Deployment</li>
+                </ul>
+            </div>
+            
+            <div class="enroll-section">
+                <h2>Ready to Master MERN Stack?</h2>
+                <p>Get complete access to all lectures, assignments, and projects.</p>
+                <a href="https://rzp.io/rzp/MERN-Course" class="enroll-btn" target="_blank">
+                    <i class="fas fa-graduation-cap"></i>
+                    Enroll Now - ₹999
+                </a>
+            </div>
+        </section>
+    </main>
+  <script>
+    const lectures = {
+      'html-css': {
+        title: 'HTML & CSS Basics',
+        subtitle: 'Lecture 1 of 5',
+        video: 'mern-demo assests/05. Forms in HTML.mp4',
+        description: 'Learn the fundamentals of HTML and CSS for building responsive web pages. This lecture covers semantic HTML structure and modern CSS styling techniques.'
+      },
+      'javascript': {
+        title: 'JavaScript Essentials',
+        subtitle: 'Lecture 2 of 5',
+        video: 'mern-demo assests/01. Introduction.mp4',
+        description: 'Master JavaScript fundamentals including variables, functions, DOM manipulation, and modern ES6+ features for dynamic web development.'
+      },
+      'react': {
+        title: 'React Introduction',
+        subtitle: 'Lecture 3 of 5',
+        video: 'mern-demo assests/01. What is React_.mp4',
+        description: 'Introduction to React library for building user interfaces. Learn components, props, state management, and React hooks.'
+      },
+      'nodejs': {
+        title: 'Node.js & Express Basics',
+        subtitle: 'Lecture 4 of 5',
+        video: 'mern-demo assests/01. What is node.js.mp4',
+        description: 'Build server-side applications with Node.js and Express framework. Learn routing, middleware, and API development.'
+      },
+      'mongodb': {
+        title: 'MongoDB Overview',
+        subtitle: 'Lecture 5 of 5',
+        video: 'mern-demo assests/01. The Mongo Shell.mp4',
+        description: 'Understand NoSQL database concepts with MongoDB. Learn CRUD operations, data modeling, and database integration.'
+      }
+    };
+
+    function loadLecture(lectureId, element) {
+      // Remove active class from all categories
+      document.querySelectorAll('.lecture-category').forEach(cat => {
+        cat.classList.remove('active');
+      });
+      
+      // Add active class to clicked category
+      element.classList.add('active');
+      
+      // Get lecture data
+      const lecture = lectures[lectureId];
+      if (!lecture) return;
+      
+      // Update lecture content
+      document.querySelector('.lecture-title').textContent = lecture.title;
+      document.querySelector('.lecture-subtitle').textContent = lecture.subtitle;
+      document.querySelector('.video-player video source').src = lecture.video;
+      document.querySelector('.video-player video').load();
+      document.querySelector('.lecture-description p').textContent = lecture.description;
+    }
+
+    // Add click animation for enroll button
+    document.querySelector('.enroll-btn').addEventListener('click', function(e) {
+      // Add clicked class for animation
+      this.classList.add('clicked');
+      
+      // Remove class after animation completes
+      setTimeout(() => {
+        this.classList.remove('clicked');
+      }, 300);
+    });
+  </script>
+</body>
+</html> 

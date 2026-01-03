@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java + DSA Demo Lectures | Bat Dada</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FFY276SNF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5FFY276SNF');
+  </script>
+</head>
+  <body>
+  <header>
+    <div class="logo">Bat Dada.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <a href="courses.html" class="back-btn-glass">
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <section class="demo-page">
+      <h1>Java + DSA Demo Lectures</h1>
+      <p class="course-description">Explore our Java + DSA demo lectures to get a taste of our Java and Data Structures course. Click on any lecture to start learning right away.</p>
+      
+      <div class="demo-lecture-container">
+        <div class="lecture-sidebar">
+          <h3>Available Lectures</h3>
+          <div class="lecture-category active" onclick="loadLecture('java-basics', this)">
+            <i class="fab fa-java"></i>
+            Java Basics
+          </div>
+          <div class="lecture-category" onclick="loadLecture('arrays-strings', this)">
+            <i class="fas fa-cubes"></i>
+            Arrays & Strings
+          </div>
+          <div class="lecture-category" onclick="loadLecture('stacks-queues', this)">
+            <i class="fas fa-layer-group"></i>
+            Stacks & Queues
+          </div>
+          <div class="lecture-category" onclick="loadLecture('trees-graphs', this)">
+            <i class="fas fa-tree"></i>
+            Trees & Graphs
+          </div>
+        </div>
+        
+        <div class="lecture-content">
+          <div class="lecture-header">
+            <h2 class="lecture-title">Java Basics</h2>
+            <p class="lecture-subtitle">Lecture 1 of 4</p>
+          </div>
+          
+          <div class="video-player">
+            <video controls>
+              <source src="java-demo assests/What to Install.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          
+          <div class="lecture-description">
+            <p>Learn the fundamentals of Java programming including variables, data types, control structures, and object-oriented programming concepts.</p>
+          </div>
+        </div>
+                  </div>
+            
+            <div class="course-highlights">
+                <h2>Course Highlights</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i> Core Java Programming</li>
+                    <li><i class="fas fa-check"></i> Object-Oriented Programming (OOP)</li>
+                    <li><i class="fas fa-check"></i> Arrays, Strings & Collections</li>
+                    <li><i class="fas fa-check"></i> Stacks, Queues & Linked Lists</li>
+                    <li><i class="fas fa-check"></i> Trees & Graph Data Structures</li>
+                    <li><i class="fas fa-check"></i> Dynamic Programming</li>
+                    <li><i class="fas fa-check"></i> Algorithm Analysis & Optimization</li>
+                    <li><i class="fas fa-check"></i> Real-world Problem Solving</li>
+                </ul>
+            </div>
+            
+            <div class="enroll-section">
+                <h2>Ready to Master Java + DSA?</h2>
+                <p>Get complete access to all lectures, assignments, and projects.</p>
+                <a href="https://rzp.io/rzp/ja-va-dsa" class="enroll-btn" target="_blank">
+                    <i class="fas fa-graduation-cap"></i>
+                    Enroll Now - ₹999
+                </a>
+            </div>
+        </section>
+    </main>
+  <script>
+    const lectures = {
+      'java-basics': {
+        title: 'Java Basics',
+        subtitle: 'Lecture 1 of 4',
+        video: 'java-demo assests/What to Install.mp4',
+        description: 'Learn the fundamentals of Java programming including variables, data types, control structures, and object-oriented programming concepts.'
+      },
+      'arrays-strings': {
+        title: 'Arrays & Strings',
+        subtitle: 'Lecture 2 of 4',
+        video: 'java-demo assests/Array.mp4',
+        description: 'Master array manipulation and string handling in Java. Learn about array operations, string methods, and efficient data processing techniques.'
+      },
+      'stacks-queues': {
+        title: 'Stacks & Queues',
+        subtitle: 'Lecture 3 of 4',
+        video: 'java-demo assests/intro stack.mp4',
+        description: 'Understand stack and queue data structures, their implementations, and real-world applications in Java programming.'
+      },
+      'trees-graphs': {
+        title: 'Trees & Graphs',
+        subtitle: 'Lecture 4 of 4',
+        video: 'java-demo assests/Binary Trees.mp4',
+        description: 'Explore tree and graph data structures, traversal algorithms, and their applications in solving complex problems.'
+      }
+    };
+
+    function loadLecture(lectureId, element) {
+      // Remove active class from all categories
+      document.querySelectorAll('.lecture-category').forEach(cat => {
+        cat.classList.remove('active');
+      });
+      
+      // Add active class to clicked category
+      element.classList.add('active');
+      
+      // Get lecture data
+      const lecture = lectures[lectureId];
+      if (!lecture) return;
+      
+      // Update lecture content
+      document.querySelector('.lecture-title').textContent = lecture.title;
+      document.querySelector('.lecture-subtitle').textContent = lecture.subtitle;
+      document.querySelector('.video-player video source').src = lecture.video;
+      document.querySelector('.video-player video').load();
+      document.querySelector('.lecture-description p').textContent = lecture.description;
+    }
+
+    // Add click animation for enroll button
+    document.querySelector('.enroll-btn').addEventListener('click', function(e) {
+      // Add clicked class for animation
+      this.classList.add('clicked');
+      
+      // Remove class after animation completes
+      setTimeout(() => {
+        this.classList.remove('clicked');
+      }, 300);
+    });
+  </script>
+</body>
+</html> 

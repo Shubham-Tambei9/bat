@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Java Demo - Bat Dada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FFY276SNF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5FFY276SNF');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Bat Dada.</div>
+        <nav>
+            <a href="demos.html">Demo Lectures</a>
+            <a href="courses.html">Notes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <a href="courses.html" class="back-btn-glass">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        
+        <section class="demo-page">
+            <h1>Complete Java by Abdul Bari - Demo Lectures</h1>
+            <p class="course-description">Master Java programming with comprehensive coverage of core concepts, collection frameworks, interfaces, and Swing GUI development.</p>
+            
+            <div class="demo-lecture-container">
+                <div class="lecture-sidebar">
+                    <h3>Available Lectures</h3>
+                    <div class="lecture-category active" onclick="loadLecture('java-basics', this)">
+                        <i class="fas fa-coffee"></i>
+                        Java Basics
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('methods', this)">
+                        <i class="fas fa-cogs"></i>
+                        Methods
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('static-final', this)">
+                        <i class="fas fa-lock"></i>
+                        Static & Final
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('inner-class', this)">
+                        <i class="fas fa-box"></i>
+                        Inner Class
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('packages', this)">
+                        <i class="fas fa-folder"></i>
+                        Packages
+                    </div>
+                </div>
+                
+                <div class="lecture-content">
+                    <div class="lecture-header">
+                        <h2 class="lecture-title">Java Basics</h2>
+                        <p class="lecture-subtitle">Lecture 1 of 5</p>
+                    </div>
+                    
+                    <div class="video-player">
+                        <video controls>
+                            <source src="java-complete-demo assests/01. Introduction_to_Java.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    <div class="lecture-description">
+                        <p>Learn the fundamentals of Java programming language including variables, data types, control structures, and basic syntax. This lecture covers everything you need to get started with Java development.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-highlights">
+                <h2>Course Highlights</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i> Complete Java Programming from Basics to Advanced</li>
+                    <li><i class="fas fa-check"></i> Methods and Function Programming</li>
+                    <li><i class="fas fa-check"></i> Static Methods and Final Keyword</li>
+                    <li><i class="fas fa-check"></i> Inner Classes and Nested Structures</li>
+                    <li><i class="fas fa-check"></i> Packages and Code Organization</li>
+                    <li><i class="fas fa-check"></i> Exception Handling</li>
+                    <li><i class="fas fa-check"></i> File I/O Operations</li>
+                    <li><i class="fas fa-check"></i> Multithreading</li>
+                    <li><i class="fas fa-check"></i> Real-world Projects</li>
+                </ul>
+            </div>
+            
+            <div class="enroll-section">
+                <h2>Ready to Master Java?</h2>
+                <p>Get complete access to all lectures, assignments, and projects.</p>
+                <a href="https://rzp.io/rzp/Java-Complete" class="enroll-btn" target="_blank">
+                    <i class="fas fa-graduation-cap"></i>
+                    Enroll Now - ₹799
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+                            <div class="logo">Bat Dada</div>
+                <p>&copy; 2025 Bat Dada. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const lectures = {
+            'java-basics': {
+                title: 'Java Basics',
+                subtitle: 'Lecture 1 of 5',
+                video: 'java-complete-demo assests/01. Introduction_to_Java.mp4',
+                description: 'Learn the fundamentals of Java programming language including variables, data types, control structures, and basic syntax. This lecture covers everything you need to get started with Java development.'
+            },
+            'methods': {
+                title: 'Methods',
+                subtitle: 'Lecture 2 of 5',
+                video: 'java-complete-demo assests/02. Methods.mp4',
+                description: 'Master method creation, parameters, return types, method overloading, and best practices for writing clean and reusable code in Java.'
+            },
+            'static-final': {
+                title: 'Static & Final',
+                subtitle: 'Lecture 3 of 5',
+                video: 'java-complete-demo assests/03. Static_Final.mp4',
+                description: 'Understand static methods, static variables, final keyword, constants, and their applications in Java programming.'
+            },
+            'inner-class': {
+                title: 'Inner Class',
+                subtitle: 'Lecture 4 of 5',
+                video: 'java-complete-demo assests/04. Inner_Class.mp4',
+                description: 'Learn about inner classes, nested classes, anonymous classes, and their use cases for better code organization and encapsulation.'
+            },
+            'packages': {
+                title: 'Packages',
+                subtitle: 'Lecture 5 of 5',
+                video: 'java-complete-demo assests/05. Packages.mp4',
+                description: 'Learn about Java packages, their organization, and how to create and use packages for better code structure and reusability.'
+            }
+        };
+
+        function loadLecture(lectureId, element) {
+            // Remove active class from all categories
+            document.querySelectorAll('.lecture-category').forEach(cat => {
+                cat.classList.remove('active');
+            });
+            
+            // Add active class to clicked category
+            element.classList.add('active');
+            
+            // Get lecture data
+            const lecture = lectures[lectureId];
+            if (!lecture) return;
+            
+            // Update lecture content
+            document.querySelector('.lecture-title').textContent = lecture.title;
+            document.querySelector('.lecture-subtitle').textContent = lecture.subtitle;
+            document.querySelector('.video-player video source').src = lecture.video;
+            document.querySelector('.video-player video').load();
+            document.querySelector('.lecture-description p').textContent = lecture.description;
+        }
+    </script>
+</body>
+</html> 

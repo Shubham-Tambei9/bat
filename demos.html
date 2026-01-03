@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Lectures | Bat Dada</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FFY276SNF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5FFY276SNF');
+  </script>
+</head>
+  <body>
+  <header>
+    <div class="logo">Bat Dada.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <a href="index.html" class="back-btn-glass">
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <section class="demo-page">
+      <h1>Demo Lectures</h1>
+      <p class="course-description">Explore our interactive demo lectures to get a taste of our comprehensive educational content. Click on any lecture to start learning right away.</p>
+      
+      <div class="demo-lecture-container">
+        <div class="lecture-sidebar">
+          <h3>Available Lectures</h3>
+          <div class="lecture-category active" onclick="loadLecture('demo1', this)">
+            <i class="fas fa-play-circle"></i>
+            Demo 1
+          </div>
+          <div class="lecture-category" onclick="loadLecture('demo2', this)">
+            <i class="fas fa-play-circle"></i>
+            Demo 2
+          </div>
+          <div class="lecture-category" onclick="loadLecture('demo3', this)">
+            <i class="fas fa-play-circle"></i>
+            Demo 3
+          </div>
+          <div class="lecture-category" onclick="loadLecture('demo4', this)">
+            <i class="fas fa-chart-line"></i>
+            Demo 4
+          </div>
+          <div class="lecture-category" onclick="loadLecture('demo5', this)">
+            <i class="fab fa-python"></i>
+            Demo 5
+          </div>
+          <div class="lecture-category" onclick="loadLecture('demo6', this)">
+            <i class="fas fa-coffee"></i>
+            Demo 6
+          </div>
+        </div>
+        
+        <div class="lecture-content">
+          <div class="lecture-header">
+            <h2 class="lecture-title">Demo 1</h2>
+            <p class="lecture-subtitle">demo1.mp4</p>
+          </div>
+          
+          <div class="video-player">
+            <video controls>
+              <source src="demo1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          
+          <div class="lecture-description">
+            <p>Introduction to our comprehensive educational content. This demo showcases the quality and depth of our course materials.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const lectures = {
+      'demo1': {
+        title: 'Demo 1',
+        subtitle: 'demo1.mp4',
+        video: 'demo1.mp4',
+        description: 'Introduction to our comprehensive educational content. This demo showcases the quality and depth of our course materials.'
+      },
+      'demo2': {
+        title: 'Demo 2',
+        subtitle: 'demo2.mp4',
+        video: 'demo2.mp4',
+        description: 'Advanced concepts and practical applications. Learn how our courses bridge theory with real-world implementation.'
+      },
+      'demo3': {
+        title: 'Demo 3',
+        subtitle: 'demo3.mp4',
+        video: 'demo3.mp4',
+        description: 'Hands-on project demonstration showing the practical skills you will develop through our comprehensive courses.'
+      },
+      'demo4': {
+        title: 'Demo 4',
+        subtitle: 'Data Science Course',
+        video: 'python-demo assests/What is data science .mp4 ilaps (1).mp4',
+        description: 'Introduction to Data Science and Machine Learning course by Code with Harry. Learn Python, Flask, NumPy, Pandas, and complete Machine Learning concepts.'
+      },
+      'demo5': {
+        title: 'Demo 5',
+        subtitle: 'PW Python Course',
+        video: 'pw-python-demo assests/01. Introduction__Installation.mp4',
+        description: 'Master Python programming fundamentals and essential data structures for efficient problem-solving and algorithm implementation.'
+      },
+      'demo6': {
+        title: 'Demo 6',
+        subtitle: 'Java Complete Course',
+        video: 'java-complete-demo assests/01. Introduction_to_Java.mp4',
+        description: 'Master Java programming with comprehensive coverage of core concepts, collection frameworks, interfaces, and Swing GUI development.'
+      }
+    };
+
+    function loadLecture(lectureId, element) {
+      // Remove active class from all categories
+      document.querySelectorAll('.lecture-category').forEach(cat => {
+        cat.classList.remove('active');
+      });
+      
+      // Add active class to clicked category
+      element.classList.add('active');
+      
+      // Get lecture data
+      const lecture = lectures[lectureId];
+      if (!lecture) return;
+      
+      // Update lecture content
+      document.querySelector('.lecture-title').textContent = lecture.title;
+      document.querySelector('.lecture-subtitle').textContent = lecture.subtitle;
+      document.querySelector('.video-player video source').src = lecture.video;
+      document.querySelector('.video-player video').load();
+      document.querySelector('.lecture-description p').textContent = lecture.description;
+    }
+
+    // Add click animations for all interactive elements
+    document.addEventListener('DOMContentLoaded', function() {
+      // Back button animation
+      const backBtn = document.querySelector('.back-btn-glass');
+      if (backBtn) {
+        backBtn.addEventListener('click', function(e) {
+          this.classList.add('clicked');
+          setTimeout(() => {
+            this.classList.remove('clicked');
+          }, 300);
+        });
+      }
+    });
+  </script>
+</body>
+</html> 

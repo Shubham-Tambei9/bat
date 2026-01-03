@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - Bat Dada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        #courseSearch:focus {
+            border-color: #229ED9 !important;
+            box-shadow: 0 0 0 3px rgba(34,158,217,0.1) !important;
+        }
+    </style>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FFY276SNF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5FFY276SNF');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Bat Dada.</div>
+        <nav>
+            <a href="demos.html">Demo Lectures</a>
+            <a href="courses.html">Notes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-btn-glass">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <section class="courses-page" id="courses">
+            <div style="text-align:center;margin-bottom:24px;">
+                <a href="https://t.me/+W9zvMm3adxZlZmE1" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#229ED9;color:#fff;padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:600;box-shadow:0 4px 12px rgba(34,158,217,0.35);">
+                    <i class="fab fa-telegram" style="font-size:1.2rem;"></i>
+                    <span>Join Telegram for more information</span>
+                </a>
+            </div>
+            <h2>Our All-in-One Course Bundle</h2>
+            <div style="margin:20px 0;display:flex;justify-content:center;">
+                <div style="position:relative;max-width:400px;width:100%;">
+                    <input type="text" id="courseSearch" placeholder="Search courses..." style="width:100%;padding:12px 45px 12px 16px;border:2px solid #ddd;border-radius:12px;font-size:1rem;outline:none;transition:all 0.3s ease;background:#fff;">
+                    <i class="fas fa-search" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);color:#999;font-size:1.1rem;pointer-events:none;"></i>
+                </div>
+            </div>
+            <div class="courses-container">
+                <div class="course-card" style="position:relative;">
+                    <span class="sale-label" style="position:absolute;top:0;left:0;background:#e53935;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 16px 0;font-size:0.98rem;font-weight:bold;z-index:2;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">SALE</span>
+                    <h3>Apna College Full Stack Web Development (MERN Stack)</h3>
+                    <div style="width:100%;height:150px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+                        <i class="fas fa-code" style="font-size:3rem;color:#fff;opacity:0.8;"></i>
+                        <div style="position:absolute;top:8px;left:8px;background:rgba(255,255,255,0.2);color:#fff;padding:4px 8px;border-radius:12px;font-size:0.8rem;font-weight:bold;">Web Development</div>
+                    </div>
+                    <p>Master front-end and back-end technologies to build complete web applications.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> HTML, CSS, JavaScript</li>
+                        <li><i class="fas fa-check"></i> React, Node.js, Express</li>
+                        <li><i class="fas fa-check"></i> MongoDB, SQL</li>
+                    </ul>
+                    <a href="https://t.me/+CKHgoYDKVjo4Zjll" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;color:#229ED9;font-size:0.98rem;text-decoration:none;margin-bottom:8px;">
+                        <i class="fab fa-telegram" style="font-size:1.3rem;"></i>
+                        <span style="opacity:0.8;">Demo Lectures</span>
+                    </a>
+                    <a class="price-tag" href="https://payments.cashfree.com/forms/webdevmern" target="_blank" rel="noopener"><span class="original-price" style="text-decoration:line-through;color:#e57373;font-size:1.05rem;margin-right:8px;">₹6780</span> Price: ₹999</a>
+                </div>
+                <div class="course-card" style="position:relative;">
+                    <span class="sale-label" style="position:absolute;top:0;left:0;background:#e53935;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 16px 0;font-size:0.98rem;font-weight:bold;z-index:2;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">SALE</span>
+                    <h3>Apna College Java + DSA Mastery</h3>
+                    <div style="width:100%;height:150px;background:linear-gradient(135deg,#ff6b35 0%,#f7931e 100%);border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+                        <div style="font-size:2.5rem;color:#fff;font-weight:bold;">Σ</div>
+                        <div style="position:absolute;top:8px;left:8px;background:rgba(0,0,0,0.3);color:#fff;padding:4px 8px;border-radius:12px;font-size:0.8rem;font-weight:bold;">DSA with Java</div>
+                    </div>
+                    <p>Build a strong foundation in Java and excel in data structures and algorithms.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Core Java & Advanced Concepts</li>
+                        <li><i class="fas fa-check"></i> Arrays, Stacks, Queues, Trees</li>
+                        <li><i class="fas fa-check"></i> Dynamic Programming</li>
+                    </ul>
+                    <a href="https://t.me/+u4mgCQVSbVAzYWZl" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;color:#229ED9;font-size:0.98rem;text-decoration:none;margin-bottom:8px;">
+                        <i class="fab fa-telegram" style="font-size:1.3rem;"></i>
+                        <span style="opacity:0.8;">Demo Lectures</span>
+                    </a>
+                    <a class="price-tag" href="https://payments.cashfree.com/forms/Apnajavadsa" target="_blank" rel="noopener"><span class="original-price" style="text-decoration:line-through;color:#e57373;font-size:1.05rem;margin-right:8px;">₹6200</span> Price: ₹999</a>
+                </div>
+                <div class="course-card" style="position:relative;">
+                    <span class="sale-label" style="position:absolute;top:0;left:0;background:#e53935;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 16px 0;font-size:0.98rem;font-weight:bold;z-index:2;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">SALE</span>
+                    <h3>PW Python + Data Structures</h3>
+                    <div style="width:100%;height:150px;background:linear-gradient(135deg,#3776ab 0%,#ffd43b 100%);border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+                        <div style="display:flex;align-items:center;gap:12px;">
+                            <div style="width:60px;height:60px;background:#ffd43b;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#3776ab;font-size:1.5rem;font-weight:bold;">PY</div>
+                            <div style="color:#fff;font-size:1.2rem;font-weight:bold;">Python DSA</div>
+                        </div>
+                    </div>
+                    <p>Master Python programming fundamentals and essential data structures for efficient problem-solving and algorithm implementation.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Python Programming Fundamentals</li>
+                        <li><i class="fas fa-check"></i> Arrays, Lists, Stacks, Queues</li>
+                        <li><i class="fas fa-check"></i> Trees, Graphs, Hash Tables</li>
+                    </ul>
+                    <a href="https://t.me/+tNvoARqG2JlhZWQ1" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;color:#229ED9;font-size:0.98rem;text-decoration:none;margin-bottom:8px;">
+                        <i class="fab fa-telegram" style="font-size:1.3rem;"></i>
+                        <span style="opacity:0.8;">Demo Lectures</span>
+                    </a>
+                    <a class="price-tag" href="https://payments.cashfree.com/forms/PWpythondsa" target="_blank" rel="noopener"><span class="original-price" style="text-decoration:line-through;color:#e57373;font-size:1.05rem;margin-right:8px;">₹5000</span>Price: ₹1499</a>
+                </div>
+                <div class="course-card" style="position:relative;">
+                    <span class="sale-label" style="position:absolute;top:0;left:0;background:#e53935;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 16px 0;font-size:0.98rem;font-weight:bold;z-index:2;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">SALE</span>
+                    <h3>Apna College Java + DSA & MERN Stack Combo Course</h3>
+                    <div style="width:100%;height:150px;background:linear-gradient(135deg,#dc2626 0%,#be123c 100%);border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+                        <div style="font-size:2rem;color:#ffd700;font-weight:bold;">SIGMA</div>
+                        <div style="position:absolute;bottom:8px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.8);color:#fff;padding:4px 12px;border-radius:12px;font-size:0.9rem;font-weight:bold;">DSA + Web Dev</div>
+                    </div>
+                    <p>Master Java, Data Structures & Algorithms, and full-stack MERN development in one comprehensive combo course.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Java Programming from Basics to Advanced</li>
+                        <li><i class="fas fa-check"></i> Data Structures & Algorithms (DSA)</li>
+                        <li><i class="fas fa-check"></i> Full MERN Stack (MongoDB, Express, React, Node.js)</li>
+                    </ul>
+                    <a href="https://t.me/+yKFMiC_Nub81MTI1" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;color:#229ED9;font-size:0.98rem;text-decoration:none;margin-bottom:8px;">
+                        <i class="fab fa-telegram" style="font-size:1.3rem;"></i>
+                        <span style="opacity:0.8;">Demo Lectures</span>
+                    </a>
+                    <a class="price-tag" href="https://payments.cashfree.com/forms/apnadsamern" target="_blank" rel="noopener"><span class="original-price" style="text-decoration:line-through;color:#e57373;font-size:1.05rem;margin-right:8px;">₹8000</span>Price: ₹1499</a>
+                </div>
+                <div class="course-card" style="position:relative;">
+                    <span class="sale-label" style="position:absolute;top:0;left:0;background:#e53935;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 16px 0;font-size:0.98rem;font-weight:bold;z-index:2;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">SALE</span>
+                    <h3>Complete Java by Abdul Bari</h3>
+                    <div style="width:100%;height:150px;background:linear-gradient(135deg,#4CAF50 0%,#2E7D32 100%);border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+                        <i class="fas fa-coffee" style="font-size:3rem;color:#fff;opacity:0.8;"></i>
+                        <div style="position:absolute;top:8px;left:8px;background:rgba(255,255,255,0.2);color:#fff;padding:4px 8px;border-radius:12px;font-size:0.8rem;font-weight:bold;">Complete Java</div>
+                    </div>
+                    <p>Master Java programming with comprehensive coverage of core concepts, collection frameworks, interfaces, and Swing GUI development.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Complete Java Programming</li>
+                        <li><i class="fas fa-check"></i> Collection Frameworks</li>
+                        <li><i class="fas fa-check"></i> Interfaces and Swing GUI</li>
+                    </ul>
+                    <a href="https://t.me/+6IePN1N20Ew4Mjc1" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;color:#229ED9;font-size:0.98rem;text-decoration:none;margin-bottom:8px;">
+                        <i class="fab fa-telegram" style="font-size:1.3rem;"></i>
+                        <span style="opacity:0.8;">Demo Lectures</span>
+                    </a>
+                    <a class="price-tag" href="https://payments.cashfree.com/forms/abdulbarijava" target="_blank" rel="noopener"><span class="original-price" style="text-decoration:line-through;color:#e57373;font-size:1.05rem;margin-right:8px;">₹3500</span>Price: ₹799</a>
+                </div>
+                <div class="course-card" style="position:relative;">
+                    <span class="sale-label" style="position:absolute;top:0;left:0;background:#e53935;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 16px 0;font-size:0.98rem;font-weight:bold;z-index:2;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">SALE</span>
+                    <span style="position:absolute;top:0;right:0;background:#4CAF50;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 0 16px;font-size:0.9rem;font-weight:bold;z-index:2;letter-spacing:0.5px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                        <i class="fas fa-upload" style="margin-right:4px;"></i>Upload Complete in 3 Days
+                    </span>
+                    <h3>Data Science & Machine Learning Course by Code with Harry</h3>
+                    <div style="width:100%;height:150px;background:linear-gradient(135deg,#1e3a8a 0%,#312e81 100%);border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+                        <div style="display:flex;align-items:center;gap:12px;">
+                            <div style="width:60px;height:60px;background:#ffd43b;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#3776ab;font-size:1.5rem;font-weight:bold;">PY</div>
+                            <div style="color:#fff;font-size:1.2rem;font-weight:bold;">Data Science</div>
+                        </div>
+                        <div style="position:absolute;top:8px;left:8px;background:rgba(255,255,255,0.2);color:#fff;padding:4px 8px;border-radius:12px;font-size:0.8rem;font-weight:bold;">ML & Python</div>
+                    </div>
+                    <p>Comprehensive data science course covering Python, Flask, and essential ML libraries for data analysis and machine learning.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Complete Python Programming</li>
+                        <li><i class="fas fa-check"></i> Flask Web Framework</li>
+                        <li><i class="fas fa-check"></i> Numpy, Pandas, Matplotlib, Seaborn</li>
+                        <li><i class="fas fa-check"></i> Complete Machine Learning</li>
+                    </ul>
+                    <a href="https://t.me/+CZDy2Nv5eVllMjc1" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;color:#229ED9;font-size:0.98rem;text-decoration:none;margin-bottom:8px;">
+                        <i class="fab fa-telegram" style="font-size:1.3rem;"></i>
+                        <span style="opacity:0.8;">Demo Lectures</span>
+                    </a>
+                    <a class="price-tag" href="https://payments.cashfree.com/forms/harrydatascience" target="_blank" rel="noopener"><span class="original-price" style="text-decoration:line-through;color:#e57373;font-size:1.05rem;margin-right:8px;">₹4500</span>Price: ₹1299</a>
+                </div>
+                <div class="course-card" style="position:relative;">
+                    <span class="sale-label" style="position:absolute;top:0;left:0;background:#e53935;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 16px 0;font-size:0.98rem;font-weight:bold;z-index:2;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">SALE</span>
+                    <h3>Professor of How 3D Animation Course</h3>
+                    <div style="width:100%;height:150px;background:linear-gradient(135deg,#8e44ad 0%,#9b59b6 100%);border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+                        <i class="fas fa-cube" style="font-size:3rem;color:#fff;opacity:0.8;"></i>
+                        <div style="position:absolute;top:8px;left:8px;background:rgba(255,255,255,0.2);color:#fff;padding:4px 8px;border-radius:12px;font-size:0.8rem;font-weight:bold;">3D Animation</div>
+                    </div>
+                    <p>Master 3D animation techniques and create stunning visual effects with professional-grade tools and industry-standard workflows.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 3D Modeling & Texturing</li>
+                        <li><i class="fas fa-check"></i> Character Animation</li>
+                        <li><i class="fas fa-check"></i> Visual Effects & Rendering</li>
+                    </ul>
+                    <a href="https://t.me/+ubgBVTQWqNo3MjVl" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;color:#229ED9;font-size:0.98rem;text-decoration:none;margin-bottom:8px;">
+                        <i class="fab fa-telegram" style="font-size:1.3rem;"></i>
+                        <span style="opacity:0.8;">Demo Lectures</span>
+                    </a>
+                    <a class="price-tag" href="https://payments.cashfree.com/forms/professorhowanimation" target="_blank" rel="noopener"><span class="original-price" style="text-decoration:line-through;color:#e57373;font-size:1.05rem;margin-right:8px;">₹5000</span>Price: ₹1999</a>
+                </div>
+                <div class="course-card" style="position:relative;">
+                    <span class="sale-label" style="position:absolute;top:0;left:0;background:#e53935;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 16px 0;font-size:0.98rem;font-weight:bold;z-index:2;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">SALE</span>
+                    <h3>PW Data Science Course</h3>
+                    <div style="width:100%;height:150px;background:linear-gradient(135deg,#2c3e50 0%,#34495e 100%);border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+                        <div style="display:flex;align-items:center;gap:12px;">
+                            <div style="width:60px;height:60px;background:#ffd43b;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#3776ab;font-size:1.5rem;font-weight:bold;">DS</div>
+                            <div style="color:#fff;font-size:1.2rem;font-weight:bold;">Data Science</div>
+                        </div>
+                        <div style="position:absolute;top:8px;left:8px;background:rgba(255,255,255,0.2);color:#fff;padding:4px 8px;border-radius:12px;font-size:0.8rem;font-weight:bold;">PW Course</div>
+                    </div>
+                    <p>Comprehensive data science course covering Python, statistics, machine learning, and data visualization for real-world applications.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Python for Data Science</li>
+                        <li><i class="fas fa-check"></i> Statistics & Probability</li>
+                        <li><i class="fas fa-check"></i> Machine Learning Algorithms</li>
+                        <li><i class="fas fa-check"></i> Data Visualization & Analysis</li>
+                    </ul>
+                    <a href="https://t.me/+u4nUD26Md4k0Mzdl" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;color:#229ED9;font-size:0.98rem;text-decoration:none;margin-bottom:8px;">
+                        <i class="fab fa-telegram" style="font-size:1.3rem;"></i>
+                        <span style="opacity:0.8;">Demo Lectures</span>
+                    </a>
+                    <a class="price-tag" href="https://payments.cashfree.com/forms/pwdatascience" target="_blank" rel="noopener"><span class="original-price" style="text-decoration:line-through;color:#e57373;font-size:1.05rem;margin-right:8px;">₹4500</span>Price: ₹1299</a>
+                </div>
+                <div class="course-card" style="position:relative;">
+                    <span class="sale-label" style="position:absolute;top:0;left:0;background:#e53935;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 16px 0;font-size:0.98rem;font-weight:bold;z-index:2;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">SALE</span>
+                    <h3>Soft Skills Session</h3>
+                    <div style="width:100%;height:150px;background:linear-gradient(135deg,#e67e22 0%,#f39c12 100%);border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+                        <i class="fas fa-users" style="font-size:3rem;color:#fff;opacity:0.8;"></i>
+                        <div style="position:absolute;top:8px;left:8px;background:rgba(255,255,255,0.2);color:#fff;padding:4px 8px;border-radius:12px;font-size:0.8rem;font-weight:bold;">Soft Skills</div>
+                    </div>
+                    <p>Develop essential soft skills including communication, leadership, teamwork, and professional development for career success.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Communication & Presentation</li>
+                        <li><i class="fas fa-check"></i> Leadership & Teamwork</li>
+                        <li><i class="fas fa-check"></i> Time Management</li>
+                        <li><i class="fas fa-check"></i> Professional Development</li>
+                    </ul>
+                    <a href="https://t.me/+W9zvMm3adxZlZmE1" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;color:#229ED9;font-size:0.98rem;text-decoration:none;margin-bottom:8px;">
+                        <i class="fab fa-telegram" style="font-size:1.3rem;"></i>
+                        <span style="opacity:0.8;">Demo Lectures</span>
+                    </a>
+                    <a class="price-tag" href="https://payments.cashfree.com/forms/softskillsession" target="_blank" rel="noopener"><span class="original-price" style="text-decoration:line-through;color:#e57373;font-size:1.05rem;margin-right:8px;">₹500</span>Price: ₹149</a>
+                </div>
+                <div class="course-card" style="position:relative;">
+                    <span class="sale-label" style="position:absolute;top:0;left:0;background:#e53935;color:#fff;padding:4px 14px 4px 10px;border-radius:0 0 16px 0;font-size:0.98rem;font-weight:bold;z-index:2;letter-spacing:1px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">SALE</span>
+                    <h3>Advance Excel Course</h3>
+                    <div style="width:100%;height:150px;background:linear-gradient(135deg,#217346 0%,#107c41 100%);border-radius:8px;margin:12px 0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+                        <i class="fas fa-file-excel" style="font-size:3rem;color:#fff;opacity:0.8;"></i>
+                        <div style="position:absolute;top:8px;left:8px;background:rgba(255,255,255,0.2);color:#fff;padding:4px 8px;border-radius:12px;font-size:0.8rem;font-weight:bold;">Excel Mastery</div>
+                    </div>
+                    <p>Master advanced Excel techniques including complex formulas, data analysis, pivot tables, macros, and automation for professional data management.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Advanced Formulas & Functions</li>
+                        <li><i class="fas fa-check"></i> Pivot Tables & Data Analysis</li>
+                        <li><i class="fas fa-check"></i> Macros</li>
+                        <li><i class="fas fa-check"></i> Data Visualization & Charts</li>
+                    </ul>
+                    <a href="https://t.me/+eOe9huyxCHRjYzRl" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;color:#229ED9;font-size:0.98rem;text-decoration:none;margin-bottom:8px;">
+                        <i class="fab fa-telegram" style="font-size:1.3rem;"></i>
+                        <span style="opacity:0.8;">Demo Lectures</span>
+                    </a>
+                    <a class="price-tag" href="https://payments.cashfree.com/forms?code=advance-excel" target="_blank" rel="noopener"><span class="original-price" style="text-decoration:line-through;color:#e57373;font-size:1.05rem;margin-right:8px;">₹5000</span> Price: ₹1199</a>
+                </div>
+            </div>
+             <div class="purchase-section">
+                <p class="price">Unlock permanent access to comprehensive course content upon purchase.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+                            <div class="logo">Bat Dada</div>
+                <p>&copy; 2025 Bat Dada. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+      // Add click animations for price tags
+      document.addEventListener('DOMContentLoaded', function() {
+        const priceTags = document.querySelectorAll('.price-tag');
+        priceTags.forEach(tag => {
+          tag.addEventListener('click', function(e) {
+            this.classList.add('clicked');
+            setTimeout(() => {
+              this.classList.remove('clicked');
+            }, 300);
+          });
+        });
+
+        // Back button animation
+        const backBtn = document.querySelector('.back-btn-glass');
+        if (backBtn) {
+          backBtn.addEventListener('click', function(e) {
+            this.classList.add('clicked');
+            setTimeout(() => {
+              this.classList.remove('clicked');
+            }, 300);
+          });
+        }
+
+        // Course search functionality
+        const searchInput = document.getElementById('courseSearch');
+        const courseCards = document.querySelectorAll('.course-card');
+        
+        if (searchInput) {
+          searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase().trim();
+            
+            courseCards.forEach(card => {
+              const courseTitle = card.querySelector('h3').textContent.toLowerCase();
+              const courseDescription = card.querySelector('p').textContent.toLowerCase();
+              const courseFeatures = Array.from(card.querySelectorAll('li')).map(li => li.textContent.toLowerCase()).join(' ');
+              
+              // Search in title, description, and features
+              const matches = courseTitle.includes(searchTerm) || 
+                             courseDescription.includes(searchTerm) || 
+                             courseFeatures.includes(searchTerm);
+              
+              if (matches || searchTerm === '') {
+                card.style.display = 'block';
+                card.style.animation = 'fadeIn 0.3s ease-in-out';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+            
+            // Add focus styles
+            if (searchTerm !== '') {
+              this.style.borderColor = '#229ED9';
+              this.style.boxShadow = '0 0 0 3px rgba(34,158,217,0.1)';
+            } else {
+              this.style.borderColor = '#ddd';
+              this.style.boxShadow = 'none';
+            }
+          });
+          
+          // Add focus event listeners for better UX
+          searchInput.addEventListener('focus', function() {
+            this.style.borderColor = '#229ED9';
+            this.style.boxShadow = '0 0 0 3px rgba(34,158,217,0.1)';
+          });
+          
+          searchInput.addEventListener('blur', function() {
+            if (this.value.trim() === '') {
+              this.style.borderColor = '#ddd';
+              this.style.boxShadow = 'none';
+            }
+          });
+        }
+      });
+    </script>
+</body>
+</html> 

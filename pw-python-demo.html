@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW Python + Data Structures Demo - Bat Dada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FFY276SNF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5FFY276SNF');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Bat Dada.</div>
+        <nav>
+            <a href="demos.html">Demo Lectures</a>
+            <a href="courses.html">Notes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <a href="courses.html" class="back-btn-glass">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        
+        <section class="demo-page">
+            <h1>PW Python + Data Structures - Demo Lectures</h1>
+            <p class="course-description">Master Python programming fundamentals and essential data structures for efficient problem-solving and algorithm implementation.</p>
+            
+            <div class="demo-lecture-container">
+                <div class="lecture-sidebar">
+                    <h3>Available Lectures</h3>
+                    <div class="lecture-category active" onclick="loadLecture('python-basics', this)">
+                        <i class="fab fa-python"></i>
+                        Python Basics
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('variables-datatypes', this)">
+                        <i class="fas fa-code"></i>
+                        Variables & Data Types
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('control-structures', this)">
+                        <i class="fas fa-sitemap"></i>
+                        Control Structures
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('functions', this)">
+                        <i class="fas fa-cogs"></i>
+                        Functions & Modules
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('lists-arrays', this)">
+                        <i class="fas fa-list"></i>
+                        Lists & Arrays
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('stacks-queues', this)">
+                        <i class="fas fa-layer-group"></i>
+                        Stacks & Queues
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('trees-graphs', this)">
+                        <i class="fas fa-tree"></i>
+                        Trees & Graphs
+                    </div>
+                    <div class="lecture-category" onclick="loadLecture('hash-tables', this)">
+                        <i class="fas fa-table"></i>
+                        Hash Tables
+                    </div>
+                </div>
+                
+                <div class="lecture-content">
+                    <div class="lecture-header">
+                        <h2 class="lecture-title">Python Basics</h2>
+                        <p class="lecture-subtitle">Lecture 1 of 8</p>
+                    </div>
+                    
+                    <div class="video-player">
+                        <video controls>
+                            <source src="pw-python-demo assests\01. Introduction__Installation.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    <div class="lecture-description">
+                        <p>Introduction to Python programming language. Learn about Python's syntax, basic concepts, and why it's the perfect language for data structures and algorithms.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-highlights">
+                <h2>Course Highlights</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i> Python Programming Fundamentals</li>
+                    <li><i class="fas fa-check"></i> Variables, Data Types, and Operators</li>
+                    <li><i class="fas fa-check"></i> Control Structures (if, loops, functions)</li>
+                    <li><i class="fas fa-check"></i> Lists, Arrays, and Basic Data Structures</li>
+                    <li><i class="fas fa-check"></i> Stacks, Queues, and Linked Lists</li>
+                    <li><i class="fas fa-check"></i> Trees, Graphs, and Advanced Structures</li>
+                    <li><i class="fas fa-check"></i> Hash Tables and Dictionaries</li>
+                    <li><i class="fas fa-check"></i> Algorithm Implementation</li>
+                </ul>
+            </div>
+            
+            <div class="enroll-section">
+                <h2>Ready to Master Python & Data Structures?</h2>
+                <p>Get complete access to all lectures, assignments, and projects.</p>
+                <a href="https://rzp.io/rzp/PW-Python" class="enroll-btn" target="_blank">
+                    <i class="fas fa-graduation-cap"></i>
+                    Enroll Now - ₹1499
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+                            <div class="logo">Bat Dada</div>
+                <p>&copy; 2025 Bat Dada. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const lectures = {
+            'python-basics': {
+                title: 'Python Basics',
+                subtitle: 'Lecture 1 of 8',
+                video: 'pw-python-demo assests/01. Introduction__Installation.mp4',
+                description: 'Introduction to Python programming language. Learn about Python\'s syntax, basic concepts, and why it\'s the perfect language for data structures and algorithms.'
+            },
+            'variables-datatypes': {
+                title: 'Variables & Data Types',
+                subtitle: 'Lecture 2 of 8',
+                video: 'pw-python-demo assests/02. Variable_in_Python.mp4',
+                description: 'Master Python variables, data types including integers, floats, strings, booleans, and understand type conversion and dynamic typing.'
+            },
+            'control-structures': {
+                title: 'Control Structures',
+                subtitle: 'Lecture 3 of 8',
+                video: 'pw-python-demo assests/03. Intro_to_conditions.mp4',
+                description: 'Learn conditional statements (if-elif-else), loops (for and while), and control flow in Python programming.'
+            },
+            'functions': {
+                title: 'Functions & Modules',
+                subtitle: 'Lecture 4 of 8',
+                video: 'pw-python-demo assests/04. Function_intro_and_its_Syntax.mp4',
+                description: 'Understand function definition, parameters, return values, scope, and module organization in Python.'
+            },
+            'lists-arrays': {
+                title: 'Lists & Arrays',
+                subtitle: 'Lecture 5 of 8',
+                video: 'pw-python-demo assests/05. Introduction_to_Linked_List.mp4',
+                description: 'Master Python lists, array operations, list comprehensions, and basic data structure concepts.'
+            },
+            'stacks-queues': {
+                title: 'Stacks & Queues',
+                subtitle: 'Lecture 6 of 8',
+                video: 'pw-python-demo assests/06. What_is_a_Stack.mp4',
+                description: 'Implement stack and queue data structures in Python. Learn LIFO and FIFO principles with practical examples.'
+            },
+            'trees-graphs': {
+                title: 'Trees & Graphs',
+                subtitle: 'Lecture 7 of 8',
+                video: 'pw-python-demo assests/07. Tree_introduction.mp4',
+                description: 'Explore tree and graph data structures, traversal algorithms, and their applications in Python.'
+            },
+            'hash-tables': {
+                title: 'Hash Tables',
+                subtitle: 'Lecture 8 of 8',
+                video: 'pw-python-demo assests/08. What_are_Hashmaps.mp4',
+                description: 'Understand hash tables, dictionaries, hash functions, and collision resolution techniques in Python.'
+            }
+        };
+
+        function loadLecture(lectureId, element) {
+            // Remove active class from all categories
+            document.querySelectorAll('.lecture-category').forEach(cat => {
+                cat.classList.remove('active');
+            });
+            
+            // Add active class to clicked category
+            element.classList.add('active');
+            
+            // Get lecture data
+            const lecture = lectures[lectureId];
+            if (!lecture) return;
+            
+            // Update lecture content
+            document.querySelector('.lecture-title').textContent = lecture.title;
+            document.querySelector('.lecture-subtitle').textContent = lecture.subtitle;
+            document.querySelector('.video-player video source').src = lecture.video;
+            document.querySelector('.video-player video').load();
+            document.querySelector('.lecture-description p').textContent = lecture.description;
+            }
+
+    // Add click animation for enroll button
+    document.querySelector('.enroll-btn').addEventListener('click', function(e) {
+      // Add clicked class for animation
+      this.classList.add('clicked');
+      
+      // Remove class after animation completes
+      setTimeout(() => {
+        this.classList.remove('clicked');
+      }, 300);
+    });
+  </script>
+</body>
+</html> 
